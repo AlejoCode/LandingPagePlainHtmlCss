@@ -68,13 +68,15 @@ body {
 }
 .navTwo {
   height: 100;
-  width: 73%;
+  width: 80%;
   position: relative;
   margin-top: 2%;
 }
 .navThree {
   height: 100;
-  width: 56.5%;
+  /* width: 56.5%; */
+  width: 62.5%;
+
   position: relative;
   margin-top: 2%;
 }
