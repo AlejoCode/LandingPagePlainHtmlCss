@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  font-family: "Montserrat";
+}
+.nav {
+  margin-top: 3%;
+
+  height: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+  margin-left: 60px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 10px;
+  margin-right: 57px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 30px 13px 30px;
+  text-decoration: none;
+  color: #575454;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: #da5454;
+  color: #ffffff;
+}
+
+.banner {
+  height: 400px;
+  width: 90%;
+  background-color: #d27d7d;
+  position: relative;
+  color: #ffffff;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+.bannerOne {
+  height: 240px;
+  width: 90%;
+  position: relative;
+  color: #aea1a1;
+  margin-left: 5%;
+  text-align: center;
+}
+.navTwo {
+  height: 100;
+  width: 73%;
+  position: relative;
+  margin-top: 2%;
+}
+.navThree {
+  height: 100;
+  width: 56.5%;
+  position: relative;
+  margin-top: 2%;
+}
+.navFour {
+  height: 760px;
+  width: 70%;
+  position: relative;
+  margin-top: 2%;
+  margin-left: 15%;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+.banner {
+  text-align: center;
+}
+.bannerContent {
+  display: inline-block;
+}
+.contentOne {
+  margin-top: 120px;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 6px;
+}
+.contentOneOne {
+  margin-top: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 6px;
+}
+.contentTwo {
+  margin-top: 30px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #e9dcdc;
+}
+
+.bannerButton {
+  margin-top: 30px;
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #d27d7d;
+  background-color: #fff;
+  padding: 10px;
+  border: 0ch;
+}
+.bannerButtonOne {
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #d27d7d;
+  padding: 12px;
+  border: 0ch;
+}
+.all {
+  background-color: #da5454;
+}
+.navItemsTwo {
+  margin-top: 3%;
+
+  height: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.imgSize {
+  width: 10px;
+  height: 10px;
+}
+.logoSize {
+  width: 160px;
+  height: 35px;
+}
+.container {
+  column-count: 3;
+  column-gap: 10px;
+  height: 780px;
+}
+.block {
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+  background-color: #e9dcdc;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.social {
+  padding: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #aea1a1;
+}
+
+.social:hover {
+  opacity: 0.7;
+}
+.special {
+  background-color: #d27d7d;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #da5454;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #eee;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: 250px;
+    overflow-y: auto;
+    z-index: 10000;
+  }
+}
